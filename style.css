@@ -9,6 +9,9 @@
     grid-column: 2;
     grid-row: 1;
     display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px 30px;
 }
 
 .sidebar {
@@ -19,4 +22,52 @@
 .main {
     grid-column: 2;
     grid-row: 2;
+}
+
+.header .search {
+    display: flex;
+    gap: 10px;
+    align-self: center;
+}
+
+#search-bar {
+    background-color: lightgray;
+    height: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex: auto;
+}
+
+.header .profile-stuff {
+    display: flex;
+    gap: 20px;
+}
+
+.header .welcome {
+    display: flex;
+    gap: 20px;
+}
+
+.profile-stuff {
+    justify-self: center;
+    align-self: center;
+}
+
+.buttons {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    background-color: deepskyblue;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 15px;
+}
+
+#welcome-user {
+    font-size: 24px;
+    font-weight: bold;
 }
